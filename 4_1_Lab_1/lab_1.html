@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <title>Lab 1</title>
+    </head>
+    <body>
+        <header>
+            Laboratorio 1 <br><p>Preguntas a responder</p>
+        </header>
+        <ul>
+            <li>
+                <div class="card" >
+                <div class="card-body">
+                  <h5 class="card-title">Cual es la diferencia entre el internet y la www?</h5>
+                  <p class="card-text">El internet es la infraesctructura que permite la conextion entre
+                    dispositivos en todo el mundo, mientras la world wide web es una parte del internet,
+                    donde esa conexcion es a traves de paginas web y ciertos protocolos, como tcp.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="card" >
+                <div class="card-body">
+                  <h5 class="card-title">Cuales son las partes de un URL?</h5>
+                  <p class="card-text">Hay 3 partes principales, pero pueden haber mas. Primero, 
+                    el protocolo- como 'http', o 'https'. Luego viene el domain name- 'www.movies.com',
+                    o 'amlo.github.io'. Esta es la direccion unica del servidor. 
+                    Finalmente hay el path, que determina el subdirectorio del servidor, por ejemplo, 
+                    'www.drive.google.com/<span>drive</span>. En ese caso, 'drive' es
+                    parte del domain name, pero como un sub-domain de google.com.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="card" >
+                <div class="card-body">
+                  <h5 class="card-title">Cual es el proposito de los metedos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</h5>
+                  <p class="card-text">Un metodo GET pide los headers y el cuerpo, a traves de un API. Un HEAD es lo mismo
+                    pero solo pide los headers, para ocupar menos bandwith cuando no quiere el cuerpo. En cambio un POST 
+                    manda informacion a traves del API. Y un PUT actualiza el data el servidor que lo recibe, pero no 
+                    puede agregar data como el POST. PATCH tambien es para actualizaciones. Y DELETE es para borrar 
+                    informacion.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="card" >
+                <div class="card-body">
+                  <h5 class="card-title">¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando 
+                    ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</h5>
+                  <p class="card-text">Seria un POST, porque estas mandando informacion al servidor para ser verificado.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="card" >
+                <div class="card-body">
+                  <h5 class="card-title">¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una 
+                    página a través de un URL?</h5>
+                  <p class="card-text">Es un GET request, porque estas pidiendo los headers, y tambien el cuerpo de la 
+                    pagina que trae todo lo que se ve. Un HEAD solo regresa los headers (metadata).
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="card" >
+                <div class="card-body">
+                  <h5 class="card-title">Un servidor web devuelve una respuesta HTTP con código 200. 
+                    ¿Qué significa esto? ¿Ocurrió algún error?</h5>
+                  <p class="card-text">Una respuesta con codigo 200 significa que fue un success. Que todo salio bien pues.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="card" >
+                <div class="card-body">
+                  <h5 class="card-title">¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta 
+                    que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</h5>
+                  <p class="card-text">El codigo 404 y otros de los 400s indican errores por parte del cliente. Si no 
+                    tienes conexion wifi, cualquier request GET te va a mandar el error 404. Entonces no es responsabilidad
+                    del desarrollador.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="card" >
+                <div class="card-body">
+                  <h5 class="card-title">¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta 
+                    que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</h5>
+                  <p class="card-text">El codigo 500 indica un error general del servidor. Entonces si, es problema del 
+                    desarrollador.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="card" >
+                <div class="card-body">
+                  <h5 class="card-title">¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? 
+                    Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</h5>
+                  <p class="card-text">Significa que ese atributo o elemento ha sido reemplazado por un nuevo. Unos 
+                    ejemplos son: '&lt;acronym&gt;', '&lt;big&gt;', '&lt;dir&gt;', o '&lt;frameset&gt;'.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="card" >
+                <div class="card-body">
+                  <h5 class="card-title">¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</h5>
+                  <p class="card-text">HMTL5 introdujo muchas cosas para avanzar y facilitar la funcion de html. Trajo nuevas
+                    semanticas, nuevos tipos de input, como email o url, la integracion directa de audio y video, y varios 
+                    APIs incluyendo el de GeoLocation, y el de WebStorage. 
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="card" >
+                <div class="card-body">
+                  <h5 class="card-title">¿Qué componentes de estructura y estilo tiene una tabla?</h5>
+                  <p class="card-text">Una tabla esta compuesta de renglones y columnas. Puedes usar un elemento tabla, y 
+                    por dentro poner th, que es 'table header' para el primer renglon, y luego puedes poner tr, para cada 
+                    'table row'. Automaticamente se les agrega ciertos estilos, como borders de gris, y chance incluso 
+                    'text-align: center;' o 'align-items: center;' tambien, no me acuerdo bien.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="card" >
+                <div class="card-body">
+                  <h5 class="card-title">¿Cuáles son los principales controles de una forma HTML5?</h5>
+                  <p class="card-text">Hay muchos pero incluyen el tipo input, que acepta texto, contrasenas, emails, 
+                    numeros de telefono y mas, tambien hay el tipo select para cuando quieres dar al usuario opciones
+                    limitadas, el tipo file para que el usuario agregue un archivo, button para que puedan dar clic 
+                    ahi y que pase algo, muchas veces una funcion 'onClick' que llama una funcion de js.
+                  </p><br>
+                  <a href="chat.openai.com" target="_blank">referencia</a>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="card" >
+                <div class="card-body">
+                  <h5 class="card-title">¿Qué tanto soporte HTML5 tiene el navegador que utilizas?</h5>
+                  <p class="card-text">Chrome, el que uso yo, segun <a href="https://www.lambdatest.com/software-testing-questions/which-browsers-have-the-best-support-to-html5" target="_blank">lambda</a>, 
+                    es el mejor. Soporta todos los nuevos features de html5. Firefox e Internet Explorer tambien son buenos.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="card" >
+                <div class="card-body">
+                  <h5 class="card-title">¿Cuál es el ciclo de vida de los sistemas de información?
+                    ¿Cuál es el ciclo de desarrollo de sistemas de información?</h5>
+                  <p class="card-text">Empieza con un analisis de la complejidad y dificultad que seria crear un nuevo sistema. Luego 
+                    definen los requisitos, luego lo disenan, luego le hacen testing al diseno, y si sale bien, lo despliegan. Despues 
+                    de que lo desplieguen, tienen que dedicar personas al mantenimiento del sistema, ademas implementar entrenamiento 
+                    para los que lo van a estar usando. Mejoras, cambios, y actualizaciones seran necesarios y si hay la posibilidad,
+                    lo pueden crecer y hacer grande o agregar nuevas funciones o datos a recopilar.
+                  </p>
+                  <p>
+                    El SDLC, o software development life cycle, es lo mismo pero termina al desplegar el sistema. 
+                  </p>
+                  <a href="https://www.geeksforgeeks.org/software-engineering-information-system-life-cycle/" target="_blank">fuente para esta respuesta</a>
+                  <br><a href="https://www.geeksforgeeks.org/software-development-life-cycle-sdlc/" target="_blank">fuente para la segunda parte</a>
+                </div>
+              </div>
+            </li>
+        </ul>
+        <footer>
+            <div>
+                Andre Zaldivar Agle <br> A01709535
+            </div>
+        </footer>
+
+
+    </body>
+    <script src= 
+        "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> 
+    </script> 
+</html>

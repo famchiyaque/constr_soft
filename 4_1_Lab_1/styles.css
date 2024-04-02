@@ -1,0 +1,64 @@
+header {
+    width: 80%;
+    margin: 2rem auto 2rem auto;
+    text-align: center;
+    height: 15vh;
+    box-shadow: gray 2px 4px 8px;
+    font-size: 2rem;
+}
+
+header p {
+    font-size:small;
+}
+
+span {
+    color: green;
+}
+
+
+ul {
+    display: flex;
+    width: 95%;
+    margin: 0 auto 2rem auto;
+    font-size: 1.5rem;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+li {
+    font-size: smaller;
+    width: 45%;
+    transition: transform 0.3s ease-in-out;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+ul div {
+    width: 100%;
+}
+
+p {
+    display: inline;
+}
+
+.card-text {
+    font-size: smaller;
+}
+
+footer {
+    width: 100%;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: flex-end;
+    height: 10rem;
+}
+
+footer div {
+    height: 80%;
+    margin: auto 0;
+    padding-right: 3rem;;
+}

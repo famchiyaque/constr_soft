@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Lab CSS</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    </head>
+    <body>
+        <header class="is-size-1">
+            Laboratorio de CSS
+            <p class="is-size-5">
+                Este archivo es para practicar y aprender los basicos de css y como aplicar 
+                estilos de forma organizada, utilizando un archivo externo vinculado tipo .css.
+            </p>
+            <p class="is-size-5">Andre Zaldivar Agle- A01709535</p>
+        </header>
+        <div class="preguntas">
+            <h2 class="title">Preguntas a Responder</h2>
+            <p class="subtitle is-5">Estare aplicando el framework "Bulma" a esta pagina para la actividad de "Frameworks de Estilo" tambien</p>
+            <div class="card">
+                <h5 class="title is-5 is-spaced">Pregunta 1: Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS?</h5>
+                <p class="has-background-primary-25 has-text-primary-25-invert">
+                    Creo que su uso debe ser minimizado porque implica que hay codigo no necesario en algun lugar del 
+                    archivo. Algo que no se esta usando, y por lo menos seria mas organizado quitarlo y aplicar el estilo 
+                    de manera normal. Creo que solo en casos raros, como por ejemplo si alguien quiere hacer algun cambio al 
+                    estilo pero que no quiere quitar el estilo que puso alguien mas ahi, puede usar el !importante para que 
+                    se vea el nuevo estilo sin quitar el trabajo de la otra persona.
+                </p>
+            </div>
+            <div class="card">
+                <div style="display: inline-block; width: 50%;">
+                    <h5 class="title is-5 is-spaced">Pregunta 2: Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?</h5>
+                    <p class="has-background-primary-25 has-text-primary-25-invert">
+                        Porque sus colores van a impactar la visibilidad del texto. Por ejemplo si tienes una imagen de fondo 
+                        de color negro, como una imagen del espacio, y si el texto tiene el color default de negro, no se va 
+                        a poder leer. 
+                    </p>
+                </div>
+                <div style="display: inline-block; width: 48%;">
+                    <img src="space.webp" alt="">
+                    <div class="flex">
+                        <p style="color: black">
+                            Esto es texto negro sobre un fondo negro
+                        </p>
+                        <p style="color: white;">
+                            Esto es texto blanco sobre un fondo negro
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h5 class="title is-5 is-spaced">Pregunta 3: Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt?</h5>
+                <p class="has-background-primary-25 has-text-primary-25-invert">
+                    Pues como alguien puede entrar a tu pagina desde un pc de 1960px de ancho o un celular movil de 
+                    solo 400px de ancho, es mejor que tus componentes sean responsivos a esa variable. Usando el %, 
+                    el tamano siempre va a depender automaticamente de las dimensiones del dispositivo. Al usar px, 
+                    el tamano es muy fijo. Si le pones 200px a una imagen, va a aparecer muy grande en un movil, pero 
+                    muy pequeno en una computadora. Luego pt es para font, e igual no es responsivo.
+                </p>
+            </div>
+            <div class="card">
+                <h5 class="title is-5 is-spaced">Pregunta 4: ¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?</h5>
+                <p class="has-background-primary-25 has-text-primary-25-invert">
+                    Porque a veces una pagina web va a tener hasta miles y miles de lineas de css, y se cada linea tiene 
+                    espacios, o indentations no necesarios, la computadora esta trabajando extra por nada. Al minimizar 
+                    el css, se quitan comentarios, estilos redundantes, y espacios que puede disminuir las lineas de codigo 
+                    que tiene que recorrer por mucho, me imagino hasta el 20, o hasta 30 porciento. 
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

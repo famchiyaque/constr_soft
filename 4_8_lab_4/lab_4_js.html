@@ -6,9 +6,74 @@
         <title>Lab 4 JS</title>
     </head>
     <body>
-        <p>Ingresa un numero porfa</p>
-        <input id="input-number" type="number">
-        <button onclick="firstFunction()">Ingresar</button>
+        <h4>Parte 3: Funcion Contador</h4>
+        <label>Ingresa un arreglo de numeros</label>
+        <input type="text" id="inputArreglo">
+        <button onclick="contador()">Subir</button>
+        <p id="resp-par"></p>
+        <p style="width: 100%; border-top: dotted black 2px;"></p>
+
+        <br>
+        <h4>Parte 4: Funcion Promedios</h4>
+        <label>Ingresa varios arreglos de numeros</label><br>
+        <input type="number" id="4-1"><br>
+        <input type="number" id="4-2"><br>
+        <input type="number" id="4-3"><br>
+        <button onclick="promedios()">Subir</button>
+        <p id="resp-promed"></p>
+        <p style="width: 100%; border-top: dotted black 2px;"></p>
+        <br>
+        <h4>Parte 6: Problema Elegido</h4>
+        <p>Xbox Live Points Problem:</p>
+        <p>Hay un numero de cajas enfrente del jugador, y cada caja trae un cierto valor
+            de puntos (pueden ser positivos o negativos). El jugador puede empezar desde 
+            cualquier caja, moviendo de una a 
+            otra, sumiendo sus puntos con cada caja. Puede moverse tantas veces que quiera
+            siempre y cuando son cajas consecutivas. (No puede regresar a la misma caja)
+            Este programa regresara la maxima cantidad de puntos que el jugador puede 
+            ganarse siguiendo estas reglas. 
+        </p>
+        <label>Ingresa el numero de cajas</label><br>
+        <input type="number" id="num-cajas"><br>
+        <label>Ahora un valor de puntos para cada caja</label><br>
+        <input type="text" id="puntos" placeholder="44 -81 63 -24 97 -38 (asi)">
+        <p style="color: gray; font-size: small; position: relative; bottom: 10px;">
+            *Si pones que hay 6 cajas, ingresas 6 valores*</p>
+        <button onclick="xbox()">Subir</button><br>
+        <p id="resp-xbox"></p>
+        <p style="width: 100%; border-top: dotted black 2px;"></p>
+        <h1>Preguntas a responder</h1>
+        <p>¿Qué diferencias y semejanzas hay entre Java y JavaScript?</p>
+        <p style="margin-left: 3rem; max-width: 50%;">No se, nunca he usado Java</p>
+        <p>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)</p>
+        <p>Al parecer hay al menos 15, pero 5 son: </p>
+        <ol>
+            <li>getDate(): regresa la fecha '4-10'</li>
+            <li>getMonth(): regresa el mes '4' (Mayo)</li>
+            <li>getDay(): regresa el dia de la semana '2' (Martes)</li>
+            <li>toDateString(): regresa la fecha como un string</li>
+            <li>getSeconds(): regresa el numero de segundo del minuto actual</li>
+        </ol>
+        <p>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)</p>
+        <p>Otra vez hay muchos, pero los mas comunes, por lo menos conmigo, son: </p>
+        <ol>
+            <li>.push(): para agregar un valor al final del arreglo</li>
+            <li>.pop(): quita del arreglo el ultimo elemento</li>
+            <li>map(): deja aplicar algun cambio a todos los elementos del arreglo</li>
+            <li>filter(): permite quitar cualquier elemento del arreglo que no cumpla una cierta especificacion</li>
+            <li>reduce(): reduce todos los elementos del arreglo a un solo valor usando una operacion</li>
+        </ol>
+        <p>¿Cómo se declara una variable con alcance local dentro de una función?</p>
+        <p style="margin-left: 3rem; max-width: 50%;">se declara de tipo var, pero hay que tomar en cuenta
+            que solo existira dentro de la funcion en que se declara, y solo puede 
+            utilizarse o ser logged al console dentro de esa funcion.
+        </p>
+        <p>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</p>
+        <p style="margin-left: 3rem; max-width: 50%;">Depende del tipo de variable y de que sirve dentro de la funcion, pero puede 
+            causar problemas al cambiar esa variable en la funcion si es un let o var, y
+            seria mas responsable declarar una nueva variable igual a la global para los 
+            propositos de esa funcion
+        </p>
     </body>
-    <script src="lab_4.js"></script>
+    <script src="./lab_4.js"></script>
 </html>

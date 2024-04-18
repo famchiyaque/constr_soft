@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Shop</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="title">
+            <h1>Fake Nike</h1>
+            <p>Haz clic en un de los productos para agregarlo a tu carrito</p>
+            <form >
+                <label>Cambia el color del <br>background de la pagina</label><br>
+                <input type="range" min="0" max="5" value="0" oninput="(changeColor(this.value))">
+            </form>
+        </div>
+        <div class="shop">
+            <div class="item">
+                <img src="./images.jpeg" alt="hey">
+                <p class="name">Perrito Nike</p>
+                <p class="price">$14.99</p>
+                <p class="desc">Tiene mucho flow este perro no? Es perron.</p>
+            </div>
+            <div class="item">
+                <img src="./a8a6cf0f8d394d3eb7f8ddddad31ff39.webp" alt="hi">
+                <p class="name">Gato Hacker</p>
+                <p class="price">$45.50</p>
+                <p class="desc">hacker en venta. puede hackear tus enemigos y arruinar su vida</p>
+            </div>
+            <div class="item">
+                <img src="./E2V3u9mWEAs4htj.jpg" alt="grog">
+                <p class="name">John Donahoe</p>
+                <p class="price">$29.99</p>
+                <p class="desc">Este el CEO actual de Nike. Tiene 5 casas y mas novias</p>
+            </div>
+        </div>
+        <div class="cart hidden">
+            <button class="pay">No hace nada</button>
+        </div>
+    </body>
+    <script src="./shop.js"></script>
+</html>

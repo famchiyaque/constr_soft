@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Validar</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="https://cool-math-games.com">About Us</a></li>
+                <li><a>Other thing</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h2>Iniciar Sesion</h2>
+        </header>
+        <div class="validate">
+            <!-- <h4>Usuario</h4>
+            <input type="text" id="user"> -->
+            <h4>Contrasena</h4>
+            <input type="password" id="pass"><br><br>
+            <p class="hidden popup">Ingresa la contrasena correcta (es 'bigdog999')</p>
+            <button class="button-10">Ingresar</button>
+        </div>
+        <br><br><br><br>
+        <h1 style="margin-left: 3rem;">Preguntas/Respuestas</h1>
+        <p style="margin-left: 4rem;">Al ingresar la contrasena correcta, puedes ver la pagina de venta de 3 cosas</p>
+        <div class="respuestas">
+            <ol>
+                <li>¿Por qué es una buena práctica usar JavaScript para checar que 
+                    sean válidos los inputs de las formas antes de enviar los datos al servidor?
+                </li>
+                <li>Porque puede que el input no este en forma correcto, y al mandarlo al 
+                    backend, puede causar errores que hacen que caiga el sistema, o si tienes 
+                    error handling, mandara un status error como 200 por ejemplo. Es mejor 
+                    validarlo antes en el client-side, donde no hay consecuencia grave por 
+                    inputs mal ingresados.
+                </li>
+                <li>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</li>
+                <li>Primero, puedes no permitir el uso de JavaScript en tu navegador, que 
+                    desactivara todo el client-side js que trae la pagina. No siempre es con 
+                    malas intenciones, puede ser por razones de seguridad contra paginas 
+                    maliciosas. Tambien puedes ir a dev tools y borrar las partes del script 
+                    que quieras para la duracion de tu sesion.
+                </li>
+                <li>Si te puedes saltar la seguridad de las validaciones de JavaScript, 
+                    entonces ¿por qué la primera pregunta dice que es una buena práctica?
+                </li>
+                <li>Es una buena practica como primer linea de defensa contra los hackers. Para 
+                    la gran mayoria va a ayudar a evitar errores en el backend, pero el backend 
+                    tambien debe contar con medidas de seguridad.
+                </li>
+            </ol>
+        </div>
+    </body>
+    <script src="./validation.js"></script>
+</html>

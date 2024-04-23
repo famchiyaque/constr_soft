@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Lab 8</title>
+    </head>
+    <body>
+        <%- include('includes/header.html') %>
+        <form action="/promedio" method="POST">
+            <label>Ingresa un arreglo de numeros</label><br>
+            <input type="text" name="arreglo"><br>
+            <button type="submit">Subir</button>
+        </form>
+        <p style="width: 100%; border-top: dotted black 2px;"></p>
+        <form action="/string" method="post">
+            <label>Ingresa un string</label><br>
+            <input type="text" name="string"><br>
+            <button type="submit">Subir</button>
+        </form>
+        <p style="width: 100%; border-top: dotted black 2px;"></p>
+        <form action="/coulomb" method="post">
+            <p>Aqui puedes calcular la fuerza ejercida sobre una carga por una otra 
+                en un campo electrico de dos cargas.
+            </p>
+            <label for="first-carga">La magnitud de la primera carga</label><br>
+            <input id="first-carga" type="number" name="firstCarga"><br>
+            <label for="first-pos-x">Posicion x de la primera carga</label><br>
+            <input id="first-pos-x" type="number" name="firstX"><br>
+            <label for="first-pos-y">Posicion y de la primera carga</label><br>
+            <input id="first-pos-y" type="number" name="firstY"><br>
+            <label for="second-carga">La magnitud de la segunda carga</label><br>
+            <input id="second-carga" type="number" name="secondCarga"><br>
+            <label for="second-pos-x">Posicion x de la segunda carga</label><br>
+            <input id="second-pos-x" type="number" name="secondX"><br>
+            <label for="second-pos-y">Posicion y de la segunda carga</label><br>
+            <input id="second-pos-y" type="number" name="secondY"><br>
+            <button type="submit">Subir</button>
+        </form>
+    </body>
+    <script src="script.js"></script>
+    </html>

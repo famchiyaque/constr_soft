@@ -12,6 +12,13 @@ app.get('/', (req, res) => {
     // res.json("Opciones: Agregar un string de numeros al url para regresar su promedio" )
 })
 
+// app.get('/:arreglo', (req, res) => {
+//     const arreglo = req.params.arreglo
+//     console.log(arreglo)
+
+// })
+
+
 app.post('/promedio', (req, res) => {
     const { arreglo } = req.body
 

@@ -6,6 +6,7 @@ const app = express()
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.set("view engine", "ejs")
+app.use(express.static('public'))
 
 app.get('/', (req, res) => {
     res.render("home.ejs")
@@ -17,6 +18,10 @@ app.get('/', (req, res) => {
 //     console.log(arreglo)
 
 // })
+
+app.get("/tec", (req, res) => {
+    res.render("tec.ejs")
+})
 
 
 app.post('/promedio', (req, res) => {

@@ -1,0 +1,20 @@
+<h1>Respuestas a las Preguntas a Responder Lab 17</h1>
+<p>La ventaja de escribir queries de SQL unicacmente en el modelo es, primero, organizacion.
+    Sabes que toda la parte de interaccion con la base de datos pasa en esa parte de tu sistema.
+    Eso tambien ayuda en la parte de seguridad. Puedes aplicar algun middleware que detecta la 
+    validad del request cada vez que un usuario lo haga, y al aplicarlo solamente al modelo, sabes que 
+    siempre estas protegido. 
+</p>
+<p>
+    La inyeccion SQL es cuando alguien se aprovecha del hecho que se utilizan queries sencillos
+    en el modelo para validar el usuario y pedir y/o cambiar informacion. En la parte de 
+    validacion, es comun que alguien puede ingresar pedazos de SQL cuando el sistema le pide 
+    un usuario, por ejemplo, como 'OR 1 = 1', para que el query el en modelo regrese 'true', y asi 
+    puede entrar sin las credenciales. 
+    Una manera de combatir esto es, en lugar de regresar en valor booleano, regresar la informacion 
+    de ese usuario, que nunca se volvera a menos que las credeciales sean exactamente correctas.
+</p>
+<p>Para Probar la Conexion a Base de Datos, entre a la ruta '/test_db'</p>
+<p>Ahora que lo pienso la db existe en mi compu, asi que el query no va a funcionar. pero bueno,
+    confien en que para mi funciono. :)
+</p>
